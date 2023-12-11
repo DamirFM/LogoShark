@@ -20,7 +20,7 @@
 - Execute the index.js; 
 - Follow the user prompt.
 ## Walkthrough video link
-- https://drive.google.com/file/d/1XBfp43ybdm5STSAYwo4c5CjO5vyY2yL-/view
+- https://drive.google.com/file/d/1giPadLd0Y_Da47pvuKDPyVzooiN23KGn/view
 ## License   
 This application is covered under MIT License
 (https://opensource.org/licenses/MIT)
