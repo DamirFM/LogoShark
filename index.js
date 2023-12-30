@@ -5,6 +5,9 @@ const fs = require('fs');
 const Circle = require('./lib/circle');
 const Triangle = require('./lib/triangle');
 const Square = require('./lib/square');
+const Ellipse = require('./lib/ellipse');
+
+
 // Using the inquirer for user input
 inquirer
     .prompt([
@@ -22,7 +25,7 @@ inquirer
             type: 'list',
             message: 'Choose the shape, please',
             name: 'shape',
-            choices: ['circle', 'triangle', 'square']
+            choices: ['circle', 'triangle', 'square', 'ellipse']
 
         },
         {
@@ -47,9 +50,12 @@ inquirer
         } else if (response.shape === 'square') {
             const square = new Square (response.text, response.text_color, response.shape_color )
             fs.writeFileSync('./examples/logo.svg', square.render());
-        } else {
+        } else if (response.shape === 'triangle'){
             const triangle = new Triangle (response.text, response.text_color, response.shape_color )
             fs.writeFileSync('./examples/logo.svg', triangle.render());
+        } else {
+            const ellipse = new Ellipse (response.text, response.text_color, response.shape_color )
+            fs.writeFileSync('./examples/logo.svg', ellipse.render());
         }
     })
    
