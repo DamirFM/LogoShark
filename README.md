@@ -4,6 +4,7 @@
 
 ## Description  
 
+
 LogoShark is a command-line utility written in Rust that allows users to create custom SVG logos based on their input. With this tool, users can specify text, colors, and shapes to generate personalized SVG images.
 
 ## Content ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) 
